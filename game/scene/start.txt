@@ -1,0 +1,23 @@
+; 初始场景，以及特效演示
+bgm:s_Title.mp3;
+unlockBgm:s_Title.mp3 -name=雲を追いかけて;
+intro:在这个世界上|有一些人，他们在网上健谈无比，能言会道|但是在现实里却反差极大，紧张时候甚至连话都说不明白 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+intro:而“随意”也正是其中的一员 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+changeBg:带立绘.jpg -next;
+unlockCg:bg.webp -name=良夜; // 解锁CG并赋予名称
+changeFigure:选择立绘文件 -left -next;
+setAnimation:enter-from-left -target=fig-left -next;
+随意:哈...哈...哈...（喘气），终于从可怕的社交中逃出来了。;
+; 模版修改演示
+miniAvatar:suiyi.webp;
+随意心理活动:呜呜呜好吓人啊社交活动！！！！！！;
+miniAvatar:none;
+随意:现实生活还是太先进了，不适合我这种网络原始人......;
+;s1
+setTextbox:hide;
+changeFigure:选择立绘文件;
+changeFigure:none -next;
+choose:目前正在制作中:选择场景文件|敬请期待:选择场景文件;
+setTextbox:hide;
+setTextbox:hide;
+end;
